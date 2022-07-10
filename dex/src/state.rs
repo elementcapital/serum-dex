@@ -1102,7 +1102,7 @@ pub struct EventQueueHeader {
     account_flags: u64, // Initialized, EventQueue
     head: u64,
     count: u64,
-    seq_num: u64,
+    pub seq_num: u64,
 }
 unsafe impl Zeroable for EventQueueHeader {}
 unsafe impl Pod for EventQueueHeader {}
